@@ -19,9 +19,18 @@ export default class Movie extends Component {
                 </button>
               </div>
               <div className="w-2/4 px-4">
-                <h1 className="text-white text-5xl font-semibold leading-tight">Dark Figure of Crime</h1>
-                <h2>2018</h2>
-                <h3>Crime / Drama</h3>
+                <h1 className="text-white text-4xl font-semibold leading-none">Dark Figure of Crime</h1>
+                <h2 className="mt-6 text-white text-lg font-semibold leading-tight">2018</h2>
+                <h3 className="text-white text-lg font-semibold leading-tight">Crime / Drama</h3>
+                <div className="flex mt-6">
+                  <span className="text-white">Available in:</span>
+                  <span className="py-1 px-2 text-white inline-block border text-sm rounded-sm leading-snug">
+                    720p.BluRay
+                  </span>
+                  <span className="py-1 px-2 text-white inline-block border text-sm rounded-sm leading-snug">
+                    1080p.BluRay
+                  </span>
+                </div>
               </div>
               <div className="w-1/4 px-4">
                 <p className="text-white">
