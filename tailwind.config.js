@@ -5,9 +5,11 @@ module.exports = {
         '2/3': '66.66666667%',
       },
       colors: {
+        'black-900': '#1b1b2366',
         'gray-transparent-md': 'rgba(26, 32, 44, .6)',
         'gray-300': '#e3e3e3',
         'gray-500': '#919191',
+        'gray-600': '#ffffff29',
         'gray-700': '#333333',
         'gray-900': '#1d1d1d',
         'gray-1000': '#171717',

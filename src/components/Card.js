@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { FaStar } from 'react-icons/fa'
 import largeCover from '../images/large-cover.jpg'
 
-export default function Card() {
+export default function Card(props) {
   return (
     <div className="w-1/2 sm:w-1/3 lg:w-1/4 mt-6 px-4 md:px-6">
       <div className="card relative overflow-hidden">

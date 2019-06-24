@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import largeCover from '../images/large-cover.jpg'
-import { FaDownload } from 'react-icons/fa'
+import { FaDownload, FaHeart, FaStar } from 'react-icons/fa'
 import background from '../images/background.jpg'
+import logoImdb from '../images/logo-imdb.svg'
+import SideCard from '../components/SideCard'
 
 export default class Movie extends Component {
   render() {
@@ -10,32 +12,64 @@ export default class Movie extends Component {
         <div className="py-4 md:py-12 bg-cover bg-no-repeat relative" style={{backgroundImage: `url(${background})`}}>
         <div className="absolute inset-0" style={{background: `linear-gradient(to bottom,rgba(29,29,29,0.65) 0,rgba(29,29,29,1) 100%)`}}></div>
           <div className="container relative">
-            <div className="flex -mx-4">
-              <div className="w-1/4 px-4">
+            <div className="flex flex-wrap -mx-4">
+              <div className="w-full flex flex-col px-4 sm:hidden">
+                <span className="text-white text-xl font-semibold leading-none">Dark Figure of Crime</span>
+                <span className="mt-1 text-white font-semibold leading-tight">2018</span>
+                <span className="text-white font-semibold leading-tight">Crime / Drama</span>
+              </div>
+              <div className="w-1/2 px-4 mt-4 sm:w-1/3 sm:mt-0 md:w-1/4">
                 <img className="w-full border-4 border-white rounded-sm" src={largeCover} alt=""/>
-                <button role="button" className="bg-green-500 flex items-center justify-center font-bold mt-2 py-2 rounded text-white w-full hover:bg-green-600 focus:bg-green-600">
+                <button role="button" className="hidden bg-green-500 font-bold mt-2 py-2 rounded text-white w-full hover:bg-green-600 focus:bg-green-600 md:flex md:items-center md:justify-center">
                   <FaDownload className="text-green-700" />
                   <span className="ml-2">Download</span>
                 </button>
               </div>
-              <div className="w-2/4 px-4">
-                <h1 className="text-white text-4xl font-semibold leading-none">Dark Figure of Crime</h1>
-                <h2 className="mt-6 text-white text-lg font-semibold leading-tight">2018</h2>
-                <h3 className="text-white text-lg font-semibold leading-tight">Crime / Drama</h3>
-                <div className="flex mt-6">
-                  <span className="text-white">Available in:</span>
-                  <span className="py-1 px-2 text-white inline-block border text-sm rounded-sm leading-snug">
-                    720p.BluRay
-                  </span>
-                  <span className="py-1 px-2 text-white inline-block border text-sm rounded-sm leading-snug">
-                    1080p.BluRay
-                  </span>
+              <div className="flex flex-col w-1/2 sm:w-2/3 md:w-2/4 px-4">
+                <div className="hidden sm:block">
+                  <h1 className="text-white text-4xl font-semibold leading-none sm:text-2xl lg:text-3xl">Dark Figure of Crime</h1>
+                  <h2 className="mt-6 text-white text-lg font-semibold leading-tight sm:mt-2">2018</h2>
+                  <h3 className="text-white text-lg font-semibold leading-tight sm:mt-2">Crime / Drama</h3>
+                </div>
+                <div className="flex flex-col flex-col-reverse">
+                  <div className="flex flex-col mt-4 sm:mt-6 sm:flex-row">
+                    <span className="hidden text-white lg:inline-block">Available in:</span>
+                    <span className="py-1 px-3 text-white inline-flex items-center border text-sm rounded-sm leading-snug border-gray-600 bg-black-900 hover:text-gray-500 lg:ml-2">
+                      <FaDownload className="text-green-700 xl:hidden" />
+                      <span className="ml-2 xl:ml-0">720p.BluRay</span>
+                    </span>
+                    <span className="py-1 px-3 mt-2 text-white inline-flex items-center border text-sm rounded-sm leading-snug border-gray-600 bg-black-900 hover:text-gray-500 sm:mt-0 sm:ml-1">
+                      <FaDownload className="text-green-700 xl:hidden" />
+                      <span className="ml-2 xl:ml-0">1080p.BluRay</span>
+                    </span>
+                  </div>
+                  <div>
+                    <div className="flex items-center relative pl-16 sm:mt-6 md:pl-20">
+                      <div className="absolute top-0 left-0 bottom-0 flex items-center">
+                        <FaHeart className="text-green-500" />
+                      </div>
+                      <span className="text-white text-lg font-bold leading-tight">1</span>
+                    </div>
+                    <div className="mt-2 flex items-center relative pl-16 md:pl-20 md:mt-4">
+                      <div className="absolute top-0 left-0 bottom-0 flex items-center">
+                        <img src={logoImdb} alt=""/>
+                      </div>
+                      <div className="text-white text-lg font-bold leading-tight flex items-center">
+                        6.6
+                        <FaStar className="hidden md:block text-green-500 ml-3" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="w-1/4 px-4">
-                <p className="text-white">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi error, voluptas et officia beatae aperiam perspiciatis libero aut quibusdam placeat corporis eaque dolores, assumenda fuga tempora vitae delectus consectetur ut obcaecati. Illum accusamus illo voluptatibus, iure blanditiis libero quisquam praesentium debitis? Corporis sit cumque quo vero in harum. Quo suscipit nam ipsum aliquam at eos deserunt laborum tempora earum adipisci. Et obcaecati consectetur similique. Explicabo quisquam necessitatibus voluptate, optio vitae error ut perspiciatis nulla laudantium neque expedita a tempora doloribus possimus placeat praesentium porro soluta ipsa delectus ullam vel sunt iste. Obcaecati minima quis possimus! Sunt delectus earum libero dolor repellendus vero officiis obcaecati sapiente molestias. Possimus, fugit. Explicabo amet perferendis beatae maxime aliquid libero porro sit voluptatum dolor suscipit exercitationem, necessitatibus tempore illum labore vitae, quia quas accusamus at dolorum velit assumenda error in voluptas. Doloremque, quasi amet sapiente tempora nostrum, impedit saepe aliquid vitae nisi provident architecto inventore aliquam minima! Minima aspernatur minus sapiente ad aut doloribus perferendis magni deserunt. Laborum, dolorem quaerat at asperiores perspiciatis similique nobis corporis blanditiis corrupti, ullam nam quas! Aspernatur impedit voluptates labore placeat excepturi deserunt laborum ea quibusdam error explicabo, ullam ab? Aliquam molestiae nihil iure ipsa aut enim a consequuntur ipsam!
-                </p>
+              <div className="hidden px-4 md:block md:w-1/4 lg:w-1/5">
+                <h4 className="font-bold text-white">Similar Movies</h4>
+                <div className="flex flex-wrap -mx-2">
+                  <SideCard />
+                  <SideCard />
+                  <SideCard />
+                  <SideCard />
+                </div>
               </div>
             </div>
           </div>
