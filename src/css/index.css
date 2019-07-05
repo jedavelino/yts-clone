@@ -13,3 +13,7 @@
 }
 
 @tailwind utilities;
+
+.img-aspect-16\:9 {
+  padding-top: 56.25%;
+}

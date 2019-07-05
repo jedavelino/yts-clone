@@ -23,4 +23,7 @@ module.exports = {
       padding: '1rem',
     },
   },
+  variants: {
+    opacity: ['responsive', 'hover']
+  }
 }

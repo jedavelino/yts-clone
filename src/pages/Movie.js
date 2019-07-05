@@ -5,6 +5,10 @@ import background from '../images/background.jpg'
 import logoImdb from '../images/logo-imdb.svg'
 import SideCard from '../components/SideCard'
 import defaultAvatar from '../images/default_avatar.jpg'
+import screenshot1 from '../images/large-screenshot1.jpg'
+import screenshot2 from '../images/medium-screenshot2.jpg'
+import screenshot3 from '../images/medium-screenshot3.jpg'
+import playTrailer from '../images/play-trailer.svg'
 
 export default class Movie extends Component {
   render() {
@@ -74,8 +78,29 @@ export default class Movie extends Component {
               </div>
             </div>
 
+            <div className="hidden -mx-1 mt-10 lg:flex">
+              <div className="w-1/3 px-1">
+                <span className="block img-aspect-16:9 relative hover:opacity-75">
+                  <img className="absolute inset-0 w-full h-full" src={screenshot1} alt=""/>
+                  <span className="flex items-center justify-center absolute inset-0">
+                    <img className="" src={playTrailer} alt=""/>
+                  </span>
+                </span>
+              </div>
+              <div className="w-1/3 px-1">
+                <span className="block img-aspect-16:9 relative hover:opacity-75">
+                  <img className="absolute inset-0 w-full h-full" src={screenshot2} alt=""/>
+                </span>
+              </div>
+              <div className="w-1/3 px-1">
+                <span className="block img-aspect-16:9 relative hover:opacity-75">
+                  <img className="absolute inset-0 w-full h-full" src={screenshot3} alt=""/>
+                </span>
+              </div>
+            </div>
+
             <div className="md:flex md:-mx-4">
-              <div className="mt-6 md:w-1/2 md:px-4 lg:w-2/3">
+              <div className="mt-6 md:w-1/2 md:px-4 lg:w-2/3 xl:pr-20">
                 <h3 className="font-bold text-white text-xl">Synopsis</h3>
                 <p className="text-gray-500 mt-2">A criminal thriller about the fierce psychological confrontation between a detective and a killer who confessed to multiple murders.</p>
 
