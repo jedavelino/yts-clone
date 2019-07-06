@@ -8,6 +8,7 @@ module.exports = {
         'black-900': '#1b1b2366',
         'gray-transparent-md': 'rgba(26, 32, 44, .6)',
         'gray-300': '#e3e3e3',
+        'gray-400': '#bababa',
         'gray-500': '#919191',
         'gray-600': '#ffffff29',
         'gray-700': '#333333',

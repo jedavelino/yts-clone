@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import largeCover from '../images/large-cover.jpg'
-import { FaDownload, FaHeart, FaStar, FaFolder, FaExpandArrowsAlt, FaVolumeUp, FaRegEye, FaClosedCaptioning, FaFilm, FaRegClock } from 'react-icons/fa'
+import { FaDownload, FaHeart, FaStar, FaFolder, FaExpandArrowsAlt, FaVolumeUp, FaRegEye, FaClosedCaptioning, FaFilm, FaRegClock, FaCommentAlt } from 'react-icons/fa'
 import background from '../images/background.jpg'
 import logoImdb from '../images/logo-imdb.svg'
 import SideCard from '../components/SideCard'
@@ -38,7 +38,7 @@ export default class Movie extends Component {
                 </div>
                 <div className="flex flex-col flex-col-reverse">
                   <div className="flex flex-col mt-4 sm:mt-6 sm:flex-row">
-                    <span className="hidden text-white lg:inline-block">Available in:</span>
+                    <em className="hidden text-white lg:inline-block">Available in:</em>
                     <span className="py-1 px-3 text-white inline-flex items-center border text-sm rounded-sm leading-snug border-gray-600 bg-black-900 hover:text-gray-500 lg:ml-2">
                       <FaDownload className="text-green-700 xl:hidden" />
                       <span className="ml-2 xl:ml-0">720p.BluRay</span>
@@ -196,6 +196,61 @@ export default class Movie extends Component {
                       <span className="font-bold text-gray-500 text-sm">P/S</span>
                       <span className="text-gray-500 text-sm ml-3">707 / 277</span>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-6 md:flex md:flex-row-reverse md:-mx-4">
+              <div className="md:w-1/2 md:px-4">
+                <h3 className="flex items-center font-bold text-white text-xl">
+                  <FaStar className="text-green-500" />
+                  <span className="ml-2">Movie Reviews</span>
+                </h3>
+                <div>
+                  <div className="pt-4">
+                    <div className="text-sm text-gray-500 flex">
+                      Reviewed by <span className="font-bold ml-1">ActionFan-Reviews</span>
+                      <div className="flex items-center ml-2">
+                        <FaStar className="text-green-500" />
+                        <span className="font-bold text-white ml-2">7 / 10</span>
+                      </div>
+                    </div>
+                    <h4 className="mt-3 font-bold text-sm text-gray-400">Banderas Is Back In Action !</h4>
+                    <div className="mt-3 text-gray-500 text-sm">
+                      <p>2017 has seen the return of Antonio Banderas in full Liam Neeson action hero mode, First punishing the bad guys in the decent B-level action flick "Security", and now another in "Acts Of Vengeance". These kinds of low budget action flicks are pretty bland and run of the mill for the most part, but with a solid yet underrated action director like Isaac Florentine (Ninja II, Undisputed II & III) and a good actor like Antonio Banderas, the movie does stand out as a good direct to VOD action flick. As a guy who grew up on these throwback action films, I liked it. Overall,a fast paced, efficient, action packed movie. Loaded with some well shot and choreographed fights and Banderas delivering justice and kicking ass like its back in the 90's. </p>
+                    </div>
+                  </div>
+                  <div className="mt-4 pt-4 border-t border-gray-600">
+                    <div className="text-sm text-gray-500 flex">
+                      Reviewed by <span className="font-bold ml-1">stephenw-30180</span>
+                      <div className="flex items-center ml-2">
+                        <FaStar className="text-green-500" />
+                        <span className="font-bold text-white ml-2">7 / 10</span>
+                      </div>
+                    </div>
+                    <h4 className="mt-3 font-bold text-sm text-gray-400">Another Banderas action thriller</h4>
+                    <div className="mt-3 text-gray-500 text-sm">
+                      <p>It seems Antonio Banderas is making a lot of movies of the same genre lately. This is not to say that's bad. I Think he does quite a good job as an "average man" tough guy. This film is no different, however, there are some exceptions.</p>
+                      <p>I gave this film a generous 7/10. Mostly because I am liking Banderas more and more of late and the plot of this film, although flimsy at times, is pretty good and fast paced.</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex justify-end mt-4 pt-2 border-t border-gray-600">
+                  <span className="text-sm text-gray-500 font-bold">Read more IMDb reviews</span>
+                </div>
+              </div>
+              <div className="mt-6 md:w-1/2 md:px-4">
+                <h3 className="flex items-center font-bold text-white text-xl">
+                  <FaCommentAlt className="text-green-500" />
+                  <span className="ml-2">1 Comments</span>
+                </h3>
+                <div className="p-5 mt-4 flex bg-gray-1000">
+                  <img className="h-10 w-10 block rounded-full" src={defaultAvatar} alt="Paz Vega"/>
+                  <div className="text-sm ml-5 w-full">
+                    <span className="text-gray-500 block font-bold">rsperry</span>
+                    <span className="text-gray-500 block">July 05, 2019 at 03:10 pm</span>
+                    <p className="text-white mt-2">Thanks, or better, gracias :-)</p>
                   </div>
                 </div>
               </div>
